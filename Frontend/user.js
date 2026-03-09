@@ -11,7 +11,7 @@ const loadData = async () => {
     for (let i = 0; i < response.data.length; i++) {
         let user = response.data[i];
         htmlData += ` <div>
-        ${user.firstName} ${user.lastName}
+        ${user.firstname} ${user.lastname}
         <button>Edit</button>
         <button class='delete' data-id='${user.id}'>Delete</button>
         </div>`
@@ -33,4 +33,3 @@ const loadData = async () => {
         });
     }
 }
-
